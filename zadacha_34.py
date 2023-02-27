@@ -7,10 +7,10 @@
 # Вывод: Парам пам-пам
 
 def count_vowels(phrases):
-    return sum(1 for letter in phrases if letter in 'аеёиоуыэюя')
+    return sum(1 for letter in phrases if letter in 'аеёиоуыэюя')  
 
 poem = list(map(str, input('Введите стихотрворение: ').split()))
 if all([count_vowels(i) == count_vowels(poem[0]) for i in poem]):
     print('Парам пам-пам')
 else:
-    print('Пам парам')
+    print('Пам парам') 

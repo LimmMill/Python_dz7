@@ -5,7 +5,7 @@
 
 def print_operation_table(operation, num_rows=6, num_columns=6):
     table = [operation(x, y) for x in range(1, num_rows + 1) for y in range(1, num_columns + 1)]
-    for i in range(len(table)//num_columns):
+    for i in range(len(table)//num_rows):
         print(*table[i::num_columns], sep='\t')
-
-print_operation_table(lambda x, y: x * y)
+ 
+print_operation_table(lambda x, y: x * y)   
